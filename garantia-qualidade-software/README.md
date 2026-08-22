@@ -30,16 +30,8 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 ## Conteúdo e atividades
 
 - [Resumo ISO 9126 e 25010](./resumo-iso-9126-e-25010.md)
-- [Atividade 1 — Diagnóstico do app 99](./atividade-1-diagnostico-app-99.md)
-- [Atividade 2 — Caça aos Defeitos](./atividade-2-caca-aos-defeitos.md)
-- [Atividade 3 — Diagnóstico de Qualidade](./atividade-3-diagnostico-qualidade.md)
-
-## Casos reais estudados (Unidade 1)
-
-| Caso | Ano | Causa raiz | Prejuízo |
-|---|---|---|---|
-| Foguete Ariane 5 | 1996 | Overflow na conversão de 64→16 bits; backup com mesmo bug | US$ 370 milhões |
-| Therac-25 | 1985-1987 | Race condition; interface não alertava o erro | Pelo menos 6 mortes |
-| Knight Capital Group | 2012 | Flag de ativação não atualizada em deploy | US$ 440 milhões em 45 min |
-
-**Lição comum:** teste em ambiente controlado não garante segurança no mundo real.
+- [Casos reais de falhas de software](./casos-reais-falhas-software.md) (Ariane 5, Therac-25, Knight Capital)
+- [Conceitos: usuário vs. tester, documentação de requisitos](./conceitos-usuario-vs-tester-e-documentacao.md)
+- [Atividade 1 — Diagnóstico do app 99](./atividade-1-diagnostico-app-99.md) · [arquivo final (PDF)](./atividade-1/Atividade1_99_QualidadeSoftware.pdf)
+- [Atividade 2 — Caça aos Defeitos](./atividade-2-caca-aos-defeitos.md) · [arquivo final (docx)](./atividade-2/Atividade2_Relatorio_de_Defeitos.docx)
+- [Atividade 3 — Diagnóstico de Qualidade](./atividade-3-diagnostico-qualidade.md) *(pendente)*
