@@ -2,6 +2,8 @@
 
 **Status:** ✅ concluída e entregue
 
+> ⚠️ O RA do Alberto estava com um dígito errado no PDF original (12525178736). Corrigido para **12525178737** na planilha em [`atividade-1/Atividade1_99_QualidadeSoftware_RA_corrigido.xlsx`](./atividade-1/Atividade1_99_QualidadeSoftware_RA_corrigido.xlsx) — exportar essa versão em PDF antes de reenviar ao Ulife.
+
 Análise do aplicativo 99 (mobilidade urbana) com base na ISO/IEC 25010.
 
 ## 1. Identificação
