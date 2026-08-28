@@ -30,8 +30,12 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 ## Conteúdo e atividades
 
 - [Resumo ISO 9126 e 25010](./resumo-iso-9126-e-25010.md)
+- [Aula 3 — Planejamento da Qualidade](./aula-3-planejamento-da-qualidade.md) (requisitos, critérios de aceitação, rastreabilidade, análise de risco)
 - [Casos reais de falhas de software](./casos-reais-falhas-software.md) (Ariane 5, Therac-25, Knight Capital)
 - [Conceitos: usuário vs. tester, documentação de requisitos](./conceitos-usuario-vs-tester-e-documentacao.md)
 - [Atividade 1 — Diagnóstico do app 99](./atividade-1-diagnostico-app-99.md) · [arquivo final (PDF)](./atividade-1/Atividade1_99_QualidadeSoftware.pdf)
 - [Atividade 2 — Caça aos Defeitos](./atividade-2-caca-aos-defeitos.md) · [arquivo final (docx)](./atividade-2/Atividade2_Relatorio_de_Defeitos.docx)
 - [Atividade 3 — Diagnóstico de Qualidade](./atividade-3-diagnostico-qualidade.md) · [arquivo final (docx)](./atividade-3/Atividade3_Diagnostico_Qualidade.docx)
+- [Atividade 4 — Requisitos → Testes](./atividade-4-requisitos-para-testes.md) *(pendente — aguarda PDF de requisitos do Ulife)*
+- [Atividade 5 — Matriz de Rastreabilidade](./atividade-5-matriz-rastreabilidade.md) *(pendente, depende da 4)*
+- [Atividade 6 — Análise de Risco](./atividade-6-analise-de-risco.md) *(pendente)*
