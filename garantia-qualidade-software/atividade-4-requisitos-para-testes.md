@@ -8,7 +8,7 @@
 
 **Formato:** dupla, entrega individual no Ulife, PDF, 40 min.
 
-> Arquivo final: [`atividade-4/Atividade4_Requisitos_para_Testes.docx`](./atividade-4/Atividade4_Requisitos_para_Testes.docx) — exportar em PDF antes de entregar no Ulife.
+> Arquivo final (pronto para entregar no Ulife): [`atividade-4/Atividade4_Requisitos_para_Testes.pdf`](./atividade-4/Atividade4_Requisitos_para_Testes.pdf) · também disponível em [.docx](./atividade-4/Atividade4_Requisitos_para_Testes.docx) editável.
 
 ## Etapas
 

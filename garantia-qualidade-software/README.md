@@ -36,6 +36,6 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 - [Atividade 1 — Diagnóstico do app 99](./atividade-1-diagnostico-app-99.md) · [arquivo final (PDF)](./atividade-1/Atividade1_99_QualidadeSoftware.pdf)
 - [Atividade 2 — Caça aos Defeitos](./atividade-2-caca-aos-defeitos.md) · [arquivo final (docx)](./atividade-2/Atividade2_Relatorio_de_Defeitos.docx)
 - [Atividade 3 — Diagnóstico de Qualidade](./atividade-3-diagnostico-qualidade.md) · [arquivo final (docx)](./atividade-3/Atividade3_Diagnostico_Qualidade.docx)
-- [Atividade 4 — Requisitos → Testes](./atividade-4-requisitos-para-testes.md) · [arquivo final (docx)](./atividade-4/Atividade4_Requisitos_para_Testes.docx)
+- [Atividade 4 — Requisitos → Testes](./atividade-4-requisitos-para-testes.md) · [arquivo final (PDF)](./atividade-4/Atividade4_Requisitos_para_Testes.pdf)
 - [Atividade 5 — Matriz de Rastreabilidade](./atividade-5-matriz-rastreabilidade.md) *(pendente — pode ser feita agora, a partir da Atividade 4)*
 - [Atividade 6 — Análise de Risco](./atividade-6-analise-de-risco.md) *(pendente)*
