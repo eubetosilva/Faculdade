@@ -1,12 +1,14 @@
 # Atividade 4 — Requisitos → Testes
 
-**Status:** ⏳ pendente
+**Status:** ✅ concluída
+
+**Sistema avaliado:** Sistema de Gestão de Biblioteca Digital (10 RF + 6 RNF) — [requisitos originais](./atividade-4/requisitos-biblioteca-digital.pdf)
 
 **Objetivo:** transformar requisitos funcionais e não funcionais em condições verificáveis de qualidade e critérios de aceitação testáveis.
 
 **Formato:** dupla, entrega individual no Ulife, PDF, 40 min.
 
-**Dependência:** o conjunto de requisitos a analisar está em um **arquivo PDF fornecido separadamente na atividade do Ulife** — ainda não baixado.
+> Arquivo final: [`atividade-4/Atividade4_Requisitos_para_Testes.docx`](./atividade-4/Atividade4_Requisitos_para_Testes.docx) — exportar em PDF antes de entregar no Ulife.
 
 ## Etapas
 
