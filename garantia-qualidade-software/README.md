@@ -27,6 +27,10 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 7. Ética e Boas Práticas Profissionais
 8. Integração da Garantia da Qualidade e Testes Automatizados
 
+## A3 (projeto de grupo, 40 pontos)
+
+- [Edital da A3](./a3/edital-a3.md) — QA em Sistema Open Source: escolha do sistema, cronograma de checkpoints, critérios de avaliação, template de relatório e apresentação
+
 ## Conteúdo e atividades
 
 - [Resumo ISO 9126 e 25010](./resumo-iso-9126-e-25010.md)
