@@ -35,6 +35,7 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 
 - [Resumo ISO 9126 e 25010](./resumo-iso-9126-e-25010.md)
 - [Aula 3 — Planejamento da Qualidade](./aula-3-planejamento-da-qualidade.md) (requisitos, critérios de aceitação, rastreabilidade, análise de risco)
+- [Aula 4 — Plano, Cenários e Casos de Teste](./aula-4-plano-cenarios-casos-de-teste.md) (ciclo de testes, os 3 artefatos, execução controlada, cadeia erro→defeito→falha)
 - [Casos reais de falhas de software](./casos-reais-falhas-software.md) (Ariane 5, Therac-25, Knight Capital)
 - [Conceitos: usuário vs. tester, documentação de requisitos](./conceitos-usuario-vs-tester-e-documentacao.md)
 - [Atividade 1 — Diagnóstico do app 99](./atividade-1-diagnostico-app-99.md) · [arquivo final (PDF)](./atividade-1/Atividade1_99_QualidadeSoftware.pdf)
@@ -43,3 +44,6 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 - [Atividade 4 — Requisitos → Testes](./atividade-4-requisitos-para-testes.md) · [arquivo final (PDF)](./atividade-4/Atividade4_Requisitos_para_Testes.pdf)
 - [Atividade 5 — Matriz de Rastreabilidade](./atividade-5-matriz-rastreabilidade.md) *(pendente — pode ser feita agora, a partir da Atividade 4)*
 - [Atividade 6 — Análise de Risco](./atividade-6-analise-de-risco.md) *(pendente)*
+- [Atividade 7 — Plano de Testes](./atividade-7-plano-de-testes.md) · [arquivo final (PDF)](./atividade-7/Atividade7_Plano_de_Testes.pdf)
+- [Atividade 8 — Casos de Teste](./atividade-8-casos-de-teste.md) *(pendente, depende da 7)*
+- [Atividade 9 — Execução Controlada com Rastreabilidade](./atividade-9-execucao-controlada.md) *(pendente)*
