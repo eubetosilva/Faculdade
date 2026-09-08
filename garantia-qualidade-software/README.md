@@ -45,5 +45,5 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 - [Atividade 5 — Matriz de Rastreabilidade](./atividade-5-matriz-rastreabilidade.md) *(pendente — pode ser feita agora, a partir da Atividade 4)*
 - [Atividade 6 — Análise de Risco](./atividade-6-analise-de-risco.md) *(pendente)*
 - [Atividade 7 — Plano de Testes](./atividade-7-plano-de-testes.md) · [arquivo final (PDF)](./atividade-7/Atividade7_Plano_de_Testes.pdf)
-- [Atividade 8 — Casos de Teste](./atividade-8-casos-de-teste.md) *(pendente, depende da 7)*
+- [Atividade 8 — Casos de Teste](./atividade-8-casos-de-teste.md) · [arquivo final (PDF)](./atividade-8/Atividade8_Casos_de_Teste.pdf)
 - [Atividade 9 — Execução Controlada com Rastreabilidade](./atividade-9-execucao-controlada.md) *(pendente)*
