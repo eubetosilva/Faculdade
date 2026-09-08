@@ -7,7 +7,9 @@ Repositório de materiais, resumos e trabalhos da faculdade, organizados por dis
 ```
 faculdade/
 ├── banco-de-dados/
-│   └── mer-aluguel-carro.md
+│   ├── README.md
+│   ├── mer-aluguel-carro.md
+│   └── aula-05-implementacao-mer.md
 └── garantia-qualidade-software/
     ├── README.md
     ├── resumo-iso-9126-e-25010.md
@@ -20,7 +22,7 @@ Cada disciplina tem sua própria pasta. Dentro dela: resumos de estudo, anotaç�
 
 ## Disciplinas
 
-- **Banco de Dados** — modelagem entidade-relacionamento (MER)
+- **Banco de Dados** — UAM, prof. Paduan — modelagem entidade-relacionamento (MER)
 - **Garantia da Qualidade de Software** — UAM, prof. Cássia Assis
 
 Para adicionar uma nova disciplina, crie uma pasta nova seguindo o mesmo padrão.
