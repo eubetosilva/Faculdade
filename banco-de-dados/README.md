@@ -1,6 +1,6 @@
 # Banco de Dados
 
-Universidade Anhembi Morumbi — Professor Paduan.
+Universidade Anhembi Morumbi — Professor Paduan. Material oficial da disciplina: [paduan.dev.br/bd](https://paduan.dev.br/bd)
 
 ## Conteúdo e anotações
 

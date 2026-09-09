@@ -2,9 +2,23 @@
 
 Script fornecido pelo prof. Paduan para praticar consultas SQL (JOINs, agregações, filtros).
 
-**Correção aplicada:** o script original veio com acentuação quebrada (mojibake, ex.: `SÃ£o Paulo` em vez de `São Paulo`) — sintoma de UTF-8 sendo lido como Latin-1. Corrigido no arquivo salvo aqui, com `SET NAMES utf8mb4;` no início e `DEFAULT CHARSET=utf8mb4` em cada `CREATE TABLE`.
+**Correção aplicada:** o script original veio com acentuação quebrada (mojibake, ex.: `SÃ£o Paulo` em vez de `São Paulo`) — sintoma de UTF-8 sendo lido como Latin-1. Corrigido no arquivo salvo aqui, com `SET NAMES utf8mb4;` no início e `DEFAULT CHARSET=utf8mb4` em cada `CREATE TABLE`. Se os dados já foram inseridos no banco com o encoding quebrado, é preciso `DROP TABLE` nas 4 tabelas e reimportar com o script corrigido (rodar `SET NAMES utf8mb4;` antes dos INSERTs resolve).
 
 > Script completo: [`schema-academico/schema_academico.sql`](./schema-academico/schema_academico.sql)
+>
+> Material do professor: [paduan.dev.br/bd](https://paduan.dev.br/bd) — Banco de Dados 2026
+
+## DER Conceitual (exercício em aula) vs. schema físico implementado
+
+O professor apresentou um DER conceitual mais completo — **Gestão Escolar**: `CURSO` (1,N)—possui—(1,1) `DISCIPLINA` (1,1)—leciona—(1,N) `PROFESSOR`, e `ALUNO` (0,N)—cursa—(0,N) `DISCIPLINA`. Como "cursa" é N:N entre Aluno e Disciplina, no projeto físico essa relação vira a tabela associativa `MATRICULA`.
+
+O schema que efetivamente implementamos (seção acima) é uma versão simplificada desse DER: substitui `DISCIPLINA` + `PROFESSOR` por `TURMA` (ligada direto a `CURSO`), então `MATRICULA` liga `ALUNO` ↔ `TURMA` em vez de `ALUNO` ↔ `DISCIPLINA`.
+
+## Boas Práticas ao Escrever DDL (slide da aula)
+
+- Definir tipos de dados compatíveis com o domínio real de cada atributo
+- Aplicar `NOT NULL` em colunas obrigatórias e `DEFAULT` quando fizer sentido
+- Nomear tabelas e colunas de forma clara e consistente
 
 ## Estrutura das tabelas
 
