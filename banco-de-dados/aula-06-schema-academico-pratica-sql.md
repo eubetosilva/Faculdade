@@ -20,6 +20,18 @@ O schema que efetivamente implementamos (seção acima) é uma versão simplific
 - Aplicar `NOT NULL` em colunas obrigatórias e `DEFAULT` quando fizer sentido
 - Nomear tabelas e colunas de forma clara e consistente
 
+## Isolando a Evidência com Precisão Absoluta (slide da aula — cláusula WHERE)
+
+A aula usa uma metáfora de "investigação" pra ensinar filtragem de dados: uma consulta sem `WHERE` traz tudo (matrículas Ativa + Trancada + Cancelada); o `WHERE` funciona como um funil que isola só o que interessa.
+
+**Cenário:** "A secretaria precisa de um relatório urgente apenas com as matrículas que estão ativas no sistema."
+
+```sql
+SELECT id_aluno, data_matricula
+FROM matricula
+WHERE situacao = 'Ativa';
+```
+
 ## Estrutura das tabelas
 
 | Tabela | PK | FKs | Campos principais |
