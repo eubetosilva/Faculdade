@@ -2,7 +2,9 @@
 
 **Formato:** Projeto Prático de QA + Relatório Técnico + Evidências + Apresentação Oral
 **Tema Central:** Quality Assurance em Sistemas Open Source: da Implantação ao Quality Gate
-**Grupos:** 2, 3 ou 4 alunos (nosso grupo: Alberto, Samuel, Armando — 3 integrantes)
+**Grupos:** 2, 3 ou 4 alunos (nosso grupo: Alberto da Silva, Samuel Guimarães Gonçalves, Armando José Martins Júnior, Ian Furtado — 4 integrantes)
+
+**Sistema escolhido:** Spring PetClinic (Angular + REST) — [`checkpoint-1/`](./checkpoint-1/Checkpoint1_A3_SpringPetclinic.docx)
 **Apresentação:** até 20 min por grupo, com slides para projeção
 
 > Documento original: [`edital_A3.pdf`](./edital_A3.pdf)
