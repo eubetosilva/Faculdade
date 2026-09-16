@@ -1,0 +1,493 @@
+<title>PetClinic Checkpoint 1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F5F7F3;
+  --surface:#FFFFFF;
+  --surface-alt:#EAEFE7;
+  --text:#161F1A;
+  --text-muted:#57655C;
+  --border:#D7DED4;
+  --spring:#2E6B24;
+  --spring-soft:#E4F1DE;
+  --angular:#B71C3D;
+  --angular-soft:#FBE4E9;
+  --code-bg:#101F17;
+  --code-text:#B9EFC0;
+  --code-muted:#6E9C78;
+  --shadow: 0 1px 2px rgba(20,30,20,.06), 0 8px 24px -12px rgba(20,30,20,.18);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1310;
+    --surface:#151E18;
+    --surface-alt:#1B261F;
+    --text:#E9F1E9;
+    --text-muted:#93A69B;
+    --border:#28362E;
+    --spring:#6FC24A;
+    --spring-soft:#1B2E1A;
+    --angular:#FF5C7A;
+    --angular-soft:#33141C;
+    --code-bg:#0A140E;
+    --code-text:#9BEBA8;
+    --code-muted:#4F8A5D;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 12px 28px -14px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1310;
+  --surface:#151E18;
+  --surface-alt:#1B261F;
+  --text:#E9F1E9;
+  --text-muted:#93A69B;
+  --border:#28362E;
+  --spring:#6FC24A;
+  --spring-soft:#1B2E1A;
+  --angular:#FF5C7A;
+  --angular-soft:#33141C;
+  --code-bg:#0A140E;
+  --code-text:#9BEBA8;
+  --code-muted:#4F8A5D;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 12px 28px -14px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  overflow:hidden;
+}
+.mono{font-family:'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;}
+
+.deck{position:relative; width:100vw; height:100vh;}
+
+.slide{
+  position:absolute; inset:0;
+  display:none;
+  padding: 6vh 7vw 9vh;
+  overflow-y:auto;
+}
+.slide.active{display:flex; flex-direction:column;}
+
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:13px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--text-muted);
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:0 0 18px;
+}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--spring);}
+
+h1{
+  font-size:clamp(30px, 4.2vw, 52px);
+  line-height:1.05;
+  margin:0 0 14px;
+  font-weight:700;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+h2{
+  font-size:clamp(24px, 3vw, 34px);
+  margin:0 0 10px;
+  font-weight:700;
+  letter-spacing:-.01em;
+  text-wrap:balance;
+}
+p{ line-height:1.55; color:var(--text); max-width:62ch; }
+.muted{color:var(--text-muted);}
+
+/* ---------- Slide 0: title ---------- */
+#s0{ justify-content:center; }
+.title-wrap{max-width:900px;}
+.badge-row{display:flex; gap:10px; flex-wrap:wrap; margin:22px 0 30px;}
+.badge{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:13px;
+  padding:6px 12px;
+  border-radius:6px;
+  border:1px solid var(--border);
+  background:var(--surface);
+}
+.badge.spring{color:var(--spring); border-color:color-mix(in srgb, var(--spring) 40%, var(--border));}
+.badge.angular{color:var(--angular); border-color:color-mix(in srgb, var(--angular) 40%, var(--border));}
+
+.team{
+  display:flex; flex-wrap:wrap; gap:10px 22px;
+  margin-top:8px;
+  padding-top:22px;
+  border-top:1px solid var(--border);
+}
+.member{display:flex; flex-direction:column; gap:2px;}
+.member .name{font-weight:600; font-size:15px;}
+.member .ra{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--text-muted);}
+
+.meta-line{
+  display:flex; gap:18px; flex-wrap:wrap;
+  font-size:14px; color:var(--text-muted);
+  margin-top:26px;
+}
+.meta-line b{color:var(--text); font-weight:600;}
+
+/* ---------- Repo / stack cards ---------- */
+.repo-row{display:flex; gap:18px; flex-wrap:wrap; margin:22px 0 8px;}
+.repo-card{
+  flex:1 1 320px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:18px 20px;
+  box-shadow:var(--shadow);
+}
+.repo-card .tag{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+  padding:3px 8px; border-radius:5px; display:inline-block; margin-bottom:10px;
+}
+.repo-card.fe .tag{background:var(--angular-soft); color:var(--angular);}
+.repo-card.be .tag{background:var(--spring-soft); color:var(--spring);}
+.repo-card .repo-name{font-family:'IBM Plex Mono', monospace; font-size:14.5px; font-weight:500;}
+
+.stack-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+  gap:10px;
+  margin-top:22px;
+}
+.stack-item{
+  display:flex; align-items:center; gap:10px;
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:8px; padding:10px 14px; font-size:14px;
+}
+.stack-item .sw{width:8px;height:8px;border-radius:50%;flex:none;}
+
+/* ---------- Terminal ---------- */
+.terminal{
+  background:var(--code-bg);
+  color:var(--code-text);
+  border-radius:10px;
+  padding:18px 20px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:13.5px;
+  line-height:1.9;
+  box-shadow:var(--shadow);
+  overflow-x:auto;
+}
+.terminal .n{color:var(--code-muted); margin-right:10px;}
+.terminal .cmd{color:var(--code-text);}
+.terminal .cmt{color:var(--code-muted);}
+
+.steps{counter-reset:step; margin-top:22px; display:flex; flex-direction:column; gap:14px; max-width:720px;}
+.step{display:flex; gap:14px;}
+.step .num{
+  counter-increment:step;
+  font-family:'IBM Plex Mono', monospace;
+  font-weight:600; font-size:13px;
+  color:var(--spring);
+  border:1px solid var(--border);
+  background:var(--spring-soft);
+  width:26px; height:26px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  flex:none;
+}
+.step .num::before{content:counter(step);}
+.step p{margin:0; font-size:15px;}
+
+/* ---------- Architecture ---------- */
+.arch-wrap{
+  display:flex; gap:34px; align-items:flex-start; flex-wrap:wrap;
+  margin-top:6px;
+}
+.arch-svg{flex:1 1 560px; min-width:320px;}
+.arch-notes{flex:1 1 280px; display:flex; flex-direction:column; gap:14px;}
+.note{
+  background:var(--surface); border:1px solid var(--border); border-radius:10px;
+  padding:14px 16px; box-shadow:var(--shadow);
+}
+.note .k{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--text-muted); letter-spacing:.04em; text-transform:uppercase; margin-bottom:4px;}
+.note .v{font-size:14.5px;}
+
+/* ---------- LinkedIn checklist ---------- */
+.checklist{display:flex; flex-direction:column; gap:14px; margin-top:24px; max-width:640px;}
+.check-item{
+  display:flex; align-items:center; gap:14px;
+  background:var(--surface); border:1px solid var(--border); border-radius:10px;
+  padding:16px 18px; box-shadow:var(--shadow);
+}
+.check-item .mark{
+  width:28px;height:28px;border-radius:50%;
+  background:var(--spring-soft); color:var(--spring);
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; flex:none;
+}
+.check-item .label{font-weight:600;}
+.check-item .sub{color:var(--text-muted); font-size:13px;}
+
+/* ---------- Cronograma ---------- */
+.table-wrap{margin-top:20px; border:1px solid var(--border); border-radius:10px; overflow:auto; box-shadow:var(--shadow);}
+table{border-collapse:collapse; width:100%; min-width:640px; font-size:14px;}
+thead th{
+  background:var(--spring); color:#fff;
+  font-family:'IBM Plex Mono', monospace; font-weight:500; font-size:12.5px;
+  letter-spacing:.03em; text-transform:uppercase;
+  text-align:left; padding:12px 14px;
+}
+tbody td{padding:12px 14px; border-top:1px solid var(--border);}
+tbody tr:nth-child(odd){background:var(--surface);}
+tbody tr:nth-child(even){background:var(--surface-alt);}
+.status-pill{
+  display:inline-block; padding:4px 10px; border-radius:999px;
+  font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500;
+  background:var(--spring-soft); color:var(--spring);
+}
+
+/* ---------- Closing ---------- */
+.next-row{display:flex; gap:16px; flex-wrap:wrap; margin-top:26px;}
+.next-card{
+  flex:1 1 220px; background:var(--surface); border:1px solid var(--border);
+  border-radius:10px; padding:16px 18px; box-shadow:var(--shadow);
+}
+.next-card .k{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--angular); letter-spacing:.06em; text-transform:uppercase; margin-bottom:6px;}
+
+/* ---------- Nav chrome ---------- */
+.progress{
+  position:fixed; top:0; left:0; height:3px; background:var(--spring);
+  transition:width .35s ease; z-index:20;
+}
+.chrome{
+  position:fixed; left:0; right:0; bottom:0;
+  height:9vh; min-height:56px;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 28px;
+  background:linear-gradient(to top, var(--bg) 55%, transparent);
+  z-index:10;
+}
+.dots{display:flex; gap:8px;}
+.dots button{
+  width:8px; height:8px; border-radius:50%; border:none; padding:0;
+  background:var(--border); cursor:pointer;
+}
+.dots button.on{background:var(--spring); width:22px; border-radius:5px; transition:width .2s;}
+.nav-btn{
+  width:40px; height:40px; border-radius:50%;
+  border:1px solid var(--border); background:var(--surface);
+  color:var(--text); font-size:18px; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:var(--shadow);
+}
+.nav-btn:hover{border-color:var(--spring); color:var(--spring);}
+.nav-btn:focus-visible, .dots button:focus-visible{outline:2px solid var(--spring); outline-offset:2px;}
+.counter{font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--text-muted);}
+.nav-group{display:flex; align-items:center; gap:14px;}
+
+@media (max-width:640px){
+  .slide{padding:8vh 6vw 16vh;}
+  .repo-row, .arch-wrap{flex-direction:column;}
+}
+</style>
+
+<div class="progress" id="progress" style="width:14.2%"></div>
+
+<div class="deck" id="deck">
+
+  <section class="slide active" id="s0" data-index="0">
+    <div class="title-wrap">
+      <p class="eyebrow"><span class="dot"></span>Garantia da Qualidade de Software · Projeto A3</p>
+      <h1>1º Checkpoint — Spring PetClinic</h1>
+      <p class="muted" style="font-size:17px;">Seleção do sistema, documentação de configuração e análise inicial da arquitetura.</p>
+      <div class="badge-row">
+        <span class="badge angular">spring-petclinic-angular</span>
+        <span class="badge spring">spring-petclinic-rest</span>
+      </div>
+      <div class="team">
+        <div class="member"><span class="name">Alberto da Silva</span><span class="ra mono">RA 12525178737</span></div>
+        <div class="member"><span class="name">Armando José Martins Júnior</span><span class="ra mono">RA 12525192042</span></div>
+        <div class="member"><span class="name">Ian Furtado</span><span class="ra mono">RA 12525156081</span></div>
+        <div class="member"><span class="name">Samuel Guimarães Gonçalves</span><span class="ra mono">RA 12525151029</span></div>
+      </div>
+      <div class="meta-line">
+        <span><b>Entrega</b> 11/09/2026</span>
+        <span><b>Professora</b> Cássia Assis</span>
+        <span><b>Universidade</b> Anhembi Morumbi</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="s1" data-index="1">
+    <p class="eyebrow"><span class="dot"></span>01 · Sistema escolhido</p>
+    <h2>Spring PetClinic (Angular + REST)</h2>
+    <p>Sistema open source de gestão de clínica veterinária. Dividido em dois repositórios que rodam em conjunto: o frontend consome os dados servidos pela API REST.</p>
+    <div class="repo-row">
+      <div class="repo-card fe">
+        <span class="tag">Frontend</span>
+        <div class="repo-name">github.com/spring-petclinic/<br>spring-petclinic-angular</div>
+      </div>
+      <div class="repo-card be">
+        <span class="tag">Backend / API</span>
+        <div class="repo-name">github.com/spring-petclinic/<br>spring-petclinic-rest</div>
+      </div>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-item"><span class="sw" style="background:var(--text-muted)"></span>Windows 10</div>
+      <div class="stack-item"><span class="sw" style="background:var(--angular)"></span>Angular</div>
+      <div class="stack-item"><span class="sw" style="background:var(--spring)"></span>Spring Boot (Java)</div>
+      <div class="stack-item"><span class="sw" style="background:var(--text-muted)"></span>Node.js 24+ / NPM</div>
+      <div class="stack-item"><span class="sw" style="background:var(--text-muted)"></span>Docker Desktop</div>
+      <div class="stack-item"><span class="sw" style="background:var(--text-muted)"></span>WSL (Windows Subsystem for Linux)</div>
+    </div>
+  </section>
+
+  <section class="slide" id="s2" data-index="2">
+    <p class="eyebrow"><span class="dot"></span>02 · Documentação de configuração</p>
+    <h2>Do clone ao ambiente rodando</h2>
+    <p>Requisito de BIOS: <b>Virtualization</b> habilitada — necessária para Docker e WSL funcionarem no Windows.</p>
+    <div class="steps">
+      <div class="step"><span class="num"></span><p>Clonar <span class="mono">spring-petclinic-angular</span> e rodar <span class="mono">npm install</span> na pasta — instala as dependências e gera o <span class="mono">package-lock.json</span>.</p></div>
+      <div class="step"><span class="num"></span><p>Habilitar a Virtualization na BIOS da placa-mãe.</p></div>
+      <div class="step"><span class="num"></span><p>Clonar <span class="mono">spring-petclinic-rest</span>; instalar o WSL se ainda não estiver presente (o Docker Desktop guia os passos).</p></div>
+      <div class="step"><span class="num"></span><p>Subir o backend containerizado via Docker.</p></div>
+    </div>
+    <div class="terminal" style="margin-top:20px; max-width:640px;">
+      <div><span class="n">$</span><span class="cmd">docker run -p 9966:9966 springcommunity/spring-petclinic-rest</span></div>
+      <div><span class="cmt">## API disponível em localhost:9966</span></div>
+    </div>
+  </section>
+
+  <section class="slide" id="s3" data-index="3">
+    <p class="eyebrow"><span class="dot"></span>03 · Análise inicial da arquitetura</p>
+    <h2>Angular consome a API REST containerizada</h2>
+    <div class="arch-wrap">
+      <svg class="arch-svg" viewBox="0 0 560 260" role="img" aria-label="Diagrama: navegador com Angular SPA envia requisições HTTP para a API REST Spring Boot rodando em container Docker na porta 9966, que acessa o banco de dados de pets, donos, veterinários e consultas.">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="var(--text-muted)"></path>
+          </marker>
+        </defs>
+        <rect x="14" y="26" width="170" height="72" rx="10" fill="var(--angular-soft)" stroke="var(--angular)" stroke-width="1.5"></rect>
+        <text x="99" y="54" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--angular)" letter-spacing="1">BROWSER</text>
+        <text x="99" y="76" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13.5" font-weight="600" fill="var(--text)">Angular SPA</text>
+
+        <rect x="14" y="162" width="170" height="72" rx="10" fill="var(--spring-soft)" stroke="var(--spring)" stroke-width="1.5"></rect>
+        <text x="99" y="190" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--spring)" letter-spacing="1">DOCKER · :9966</text>
+        <text x="99" y="212" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13.5" font-weight="600" fill="var(--text)">Spring Boot REST</text>
+
+        <rect x="376" y="94" width="170" height="72" rx="10" fill="var(--surface)" stroke="var(--border)" stroke-width="1.5"></rect>
+        <text x="461" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--text-muted)" letter-spacing="1">DADOS</text>
+        <text x="461" y="144" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--text)">Pets · Donos</text>
+        <text x="461" y="160" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--text)">Vets · Consultas</text>
+
+        <path d="M99,98 L99,155" stroke="var(--text-muted)" stroke-width="1.5" marker-end="url(#arrow)" fill="none"></path>
+        <text x="112" y="131" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--text-muted)">HTTP</text>
+
+        <path d="M184,198 L369,140" stroke="var(--text-muted)" stroke-width="1.5" marker-end="url(#arrow)" fill="none"></path>
+        <text x="230" y="160" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--text-muted)">JPA</text>
+      </svg>
+      <div class="arch-notes">
+        <div class="note"><div class="k">Frontend</div><div class="v">Angular CLI · desenvolvimento e execução da SPA</div></div>
+        <div class="note"><div class="k">Runtime backend</div><div class="v">Docker Desktop · isola as dependências Java/Maven do host</div></div>
+        <div class="note"><div class="k">Pré-requisito</div><div class="v">WSL 2 · exigido pelo Docker Desktop no Windows</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="s4" data-index="4">
+    <p class="eyebrow"><span class="dot"></span>04 · Post no LinkedIn</p>
+    <h2>Divulgação deste checkpoint</h2>
+    <div class="checklist">
+      <div class="check-item">
+        <span class="mark">✓</span>
+        <div><div class="label">Link do post</div><div class="sub">Marcar @Profa. Cássia Assis e @Anhembi Morumbi</div></div>
+      </div>
+      <div class="check-item">
+        <span class="mark">✓</span>
+        <div><div class="label">Print do post no LinkedIn</div><div class="sub">Anexado na entrega do Ulife</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="s5" data-index="5">
+    <p class="eyebrow"><span class="dot"></span>05 · Cronograma</p>
+    <h2>Checkpoint 1 — 11/09/2026</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Atividade</th><th>Responsável</th><th>Data</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Revisão da documentação</td><td>Alberto da Silva</td><td class="mono">11/09/26</td><td><span class="status-pill">Concluído</span></td></tr>
+          <tr><td>Redação da documentação</td><td>Armando Martins</td><td class="mono">11/09/26</td><td><span class="status-pill">Concluído</span></td></tr>
+          <tr><td>Post no LinkedIn</td><td>Ian Furtado</td><td class="mono">11/09/26</td><td><span class="status-pill">Concluído</span></td></tr>
+          <tr><td>Configuração e instalação</td><td>Samuel Gonçalves</td><td class="mono">11/09/26</td><td><span class="status-pill">Concluído</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="slide" id="s6" data-index="6">
+    <p class="eyebrow"><span class="dot"></span>Encerramento</p>
+    <h2>Checkpoint 1 concluído</h2>
+    <p>Sistema selecionado, ambiente configurado e arquitetura mapeada. Próximo passo: Checkpoint 2.</p>
+    <div class="next-row">
+      <div class="next-card"><div class="k">Plano de testes</div>Escopo, estratégia e critérios de aceitação</div>
+      <div class="next-card"><div class="k">Matriz de rastreabilidade</div>Requisitos ↔ casos de teste</div>
+      <div class="next-card"><div class="k">Análise de riscos</div>Matriz probabilidade × impacto</div>
+    </div>
+  </section>
+
+</div>
+
+<div class="chrome">
+  <div class="nav-group">
+    <button class="nav-btn" id="prev" aria-label="Slide anterior">←</button>
+    <span class="counter mono"><span id="cur">1</span> / <span id="total">7</span></span>
+    <button class="nav-btn" id="next" aria-label="Próximo slide">→</button>
+  </div>
+  <div class="dots" id="dots"></div>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var total = slides.length;
+  var idx = 0;
+  var dotsWrap = document.getElementById('dots');
+  var curEl = document.getElementById('cur');
+  var totalEl = document.getElementById('total');
+  var progressEl = document.getElementById('progress');
+  totalEl.textContent = total;
+
+  slides.forEach(function(_, i){
+    var b = document.createElement('button');
+    b.setAttribute('aria-label', 'Ir para slide ' + (i+1));
+    b.addEventListener('click', function(){ go(i); });
+    dotsWrap.appendChild(b);
+  });
+  var dotEls = Array.prototype.slice.call(dotsWrap.children);
+
+  function render(){
+    slides.forEach(function(s, i){ s.classList.toggle('active', i === idx); });
+    dotEls.forEach(function(d, i){ d.classList.toggle('on', i === idx); });
+    curEl.textContent = idx + 1;
+    progressEl.style.width = (((idx+1)/total) * 100) + '%';
+    try { localStorage.setItem('petclinic-checkpoint-slide', String(idx)); } catch(e){}
+  }
+  function go(i){ idx = Math.max(0, Math.min(total - 1, i)); render(); }
+
+  document.getElementById('prev').addEventListener('click', function(){ go(idx - 1); });
+  document.getElementById('next').addEventListener('click', function(){ go(idx + 1); });
+  window.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown'){ go(idx + 1); e.preventDefault(); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp'){ go(idx - 1); e.preventDefault(); }
+    else if (e.key === 'Home'){ go(0); }
+    else if (e.key === 'End'){ go(total - 1); }
+  });
+
+  var saved = 0;
+  try { saved = parseInt(localStorage.getItem('petclinic-checkpoint-slide') || '0', 10) || 0; } catch(e){}
+  go(saved);
+})();
+</script>
