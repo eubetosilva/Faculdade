@@ -47,3 +47,6 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 - [Atividade 7 — Plano de Testes](./atividade-7-plano-de-testes.md) · [arquivo final (PDF)](./atividade-7/Atividade7_Plano_de_Testes.pdf)
 - [Atividade 8 — Casos de Teste](./atividade-8-casos-de-teste.md) · [arquivo final (PDF)](./atividade-8/Atividade8_Casos_de_Teste.pdf)
 - [Atividade 9 — Execução Controlada com Rastreabilidade](./atividade-9-execucao-controlada.md) *(pendente)*
+- [Atividade 12 — Bug Hunt: Testes Exploratórios](./atividade-12-bug-hunt.md) · [arquivo final (docx)](./atividade-12/Atividade12_Bug_Hunt.docx)
+- [Atividade 13 — Bug Tracking: Registro de Defeitos no Jira](./atividade-13-bug-tracking-jira.md) · [arquivo final (docx)](./atividade-13/Atividade13_Bug_Tracking_Jira.docx)
+- [Atividade 14 — Defect Triage: Reunião de Triagem](./atividade-14-defect-triage.md) · [arquivo final (docx)](./atividade-14/Atividade14_Defect_Triage.docx)
