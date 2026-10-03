@@ -3,7 +3,7 @@
 **Status:** ✅ concluída
 **Objetivo:** simular a reunião de triagem que prioriza os 5 defeitos da Atividade 12/13 pra próxima release, usando os critérios Risco/Impacto/Custo/Visibilidade/Frequência.
 
-Relatório oficial elaborado pelo Samuel.
+Conteúdo original elaborado pelo Samuel, padronizado no mesmo template (cabeçalho UAM/Anima) usado nas Atividades 12 e 13.
 
 ## Papéis assumidos no grupo
 
@@ -26,4 +26,4 @@ Relatório oficial elaborado pelo Samuel.
 
 O BUG-005 (preços divergentes do catálogo) foi **escalado de Média para Alta** durante a própria reunião de triagem — o PO argumentou que o risco financeiro e de perda de conversão justificava ação imediata, mesmo a classificação original (Atividade 12) sendo Média. Essa reavaliação é justamente o papel da triagem.
 
-> Arquivo final (oficial): [`atividade-14/Atividade14_Defect_Triage.pdf`](./atividade-14/Atividade14_Defect_Triage.pdf)
+> Arquivo final: [`atividade-14/Atividade14_Defect_Triage.docx`](./atividade-14/Atividade14_Defect_Triage.docx) · original do Samuel: [`Atividade14_Defect_Triage.pdf`](./atividade-14/Atividade14_Defect_Triage.pdf)
