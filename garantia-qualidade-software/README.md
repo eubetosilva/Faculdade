@@ -49,4 +49,4 @@ Universidade Anhembi Morumbi — Professora Cássia Assis · 160h
 - [Atividade 9 — Execução Controlada com Rastreabilidade](./atividade-9-execucao-controlada.md) *(pendente)*
 - [Atividade 12 — Bug Hunt: Testes Exploratórios](./atividade-12-bug-hunt.md) · [arquivo final (PDF, com prints reais)](./atividade-12/Atividade12_Bug_Hunt.pdf)
 - [Atividade 13 — Bug Tracking: Registro de Defeitos no Jira](./atividade-13-bug-tracking-jira.md) · [arquivo final (docx)](./atividade-13/Atividade13_Bug_Tracking_Jira.docx)
-- [Atividade 14 — Defect Triage: Reunião de Triagem](./atividade-14-defect-triage.md) · [arquivo final (docx)](./atividade-14/Atividade14_Defect_Triage.docx)
+- [Atividade 14 — Defect Triage: Reunião de Triagem](./atividade-14-defect-triage.md) · [arquivo final (PDF)](./atividade-14/Atividade14_Defect_Triage.pdf)
