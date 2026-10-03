@@ -17,4 +17,4 @@ Conteúdo original elaborado pelo Armando, com prints reais de cada reprodução
 
 Cada defeito documentado com o template completo (Ambiente, Pré-condição, Passos para Reprodução, Resultado Esperado/Obtido, Severidade, Prioridade, Técnica, Status, Evidência em print real).
 
-> Arquivo final: [`atividade-12/Atividade12_Bug_Hunt.docx`](./atividade-12/Atividade12_Bug_Hunt.docx) · original do Armando: [`Atividade12_Bug_Hunt.pdf`](./atividade-12/Atividade12_Bug_Hunt.pdf)
+> Arquivo final: [`atividade-12/Atividade12_Bug_Hunt.docx`](./atividade-12/Atividade12_Bug_Hunt.docx) · [`Atividade12_Bug_Hunt.pdf`](./atividade-12/Atividade12_Bug_Hunt.pdf) · original do Armando: [`Atividade12_Bug_Hunt_original_Armando.pdf`](./atividade-12/Atividade12_Bug_Hunt_original_Armando.pdf)

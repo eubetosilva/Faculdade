@@ -26,4 +26,4 @@ Conteúdo original elaborado pelo Samuel, padronizado no mesmo template (cabeça
 
 O BUG-005 (preços divergentes do catálogo) foi **escalado de Média para Alta** durante a própria reunião de triagem — o PO argumentou que o risco financeiro e de perda de conversão justificava ação imediata, mesmo a classificação original (Atividade 12) sendo Média. Essa reavaliação é justamente o papel da triagem.
 
-> Arquivo final: [`atividade-14/Atividade14_Defect_Triage.docx`](./atividade-14/Atividade14_Defect_Triage.docx) · original do Samuel: [`Atividade14_Defect_Triage.pdf`](./atividade-14/Atividade14_Defect_Triage.pdf)
+> Arquivo final: [`atividade-14/Atividade14_Defect_Triage.docx`](./atividade-14/Atividade14_Defect_Triage.docx) · [`Atividade14_Defect_Triage.pdf`](./atividade-14/Atividade14_Defect_Triage.pdf) · original do Samuel: [`Atividade14_Defect_Triage_original_Samuel.pdf`](./atividade-14/Atividade14_Defect_Triage_original_Samuel.pdf)

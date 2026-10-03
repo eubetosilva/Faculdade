@@ -21,6 +21,6 @@ Etiquetas: Vermelho/Laranja/Amarelo/Verde (severidade) · Roxo/Azul/Cinza (prior
 
 O cartão do checkout com carrinho vazio (BUG-002) já foi puxado direto pra "Em Correção" por ser o mais grave (permite concluir pedido de valor $0); os outros 4 ainda estão sendo analisados/aguardando análise.
 
-> Arquivo final: [`atividade-13/Atividade13_Bug_Tracking_Jira.docx`](./atividade-13/Atividade13_Bug_Tracking_Jira.docx)
+> Arquivo final: [`atividade-13/Atividade13_Bug_Tracking_Jira.docx`](./atividade-13/Atividade13_Bug_Tracking_Jira.docx) · [`Atividade13_Bug_Tracking_Jira.pdf`](./atividade-13/Atividade13_Bug_Tracking_Jira.pdf)
 
 **Pendente:** atualizar os 5 cartões já criados no board real do Jira com esse conteúdo (bugs corretos do relatório oficial do Armando) e anexar o print atualizado.
