@@ -7,7 +7,7 @@
 
 | Integrante | Papel |
 |---|---|
-| Alberto da Silva | QA |
+| Beto da Silva | QA |
 | Samuel Guimarães Gonçalves | Líder Técnico |
 | Armando José Martins Júnior | Product Owner / Gerente de Projeto |
 | Ian Furtado | Desenvolvedor |
@@ -16,12 +16,12 @@
 
 | Defeito | Severidade | Prioridade | Decisão |
 |---|---|---|---|
-| BUG-003 | Crítica | Alta | Corrigir agora |
-| BUG-001 | Alta | Alta | Corrigir agora |
-| BUG-004 | Média | Média | Corrigir na próxima release |
-| BUG-005 | Média | Baixa | Corrigir na próxima release |
-| BUG-002 | Baixa | Baixa | Adiar |
+| BUG-002 | Alta | Alta | Corrigir agora |
+| BUG-001 | Média | Média | Corrigir na próxima release |
+| BUG-003 | Média | Média | Corrigir na próxima release |
+| BUG-005 | Média | Média | Corrigir na próxima release |
+| BUG-004 | Média | Média | Adiar |
 
-O único ponto de discussão real foi o BUG-001: o PO achou que era "só estético" e queria adiar, mas o QA argumentou que afeta a decisão de compra do cliente, então o grupo subiu pra "corrigir agora".
+O ponto de discussão foi o BUG-005: o PO achou que era "só visual" e queria adiar, mas o QA lembrou que mostrar preço diferente do catálogo oficial derruba a confiança do cliente se vazasse pra um usuário de verdade — o grupo manteve ele pra próxima release em vez de adiar.
 
 > Arquivo final: [`atividade-14/Atividade14_Defect_Triage.docx`](./atividade-14/Atividade14_Defect_Triage.docx)

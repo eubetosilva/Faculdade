@@ -5,21 +5,22 @@
 
 ## Board
 
+Projeto Jira: betosilva.atlassian.net (plano Free)
 Listas: Novo · Em Análise · Em Correção · Em Verificação · Fechado · Adiado
 Etiquetas: Vermelho/Laranja/Amarelo/Verde (severidade) · Roxo/Azul/Cinza (prioridade)
 
-## Distribuição atual dos cartões
+## Distribuição dos cartões
 
 | Defeito | Lista | Etiqueta Severidade | Etiqueta Prioridade |
 |---|---|---|---|
-| BUG-003 | Em Correção | Vermelho (Crítica) | Roxo (Alta) |
-| BUG-001 | Em Análise | Laranja (Alta) | Roxo (Alta) |
+| BUG-002 | Em Correção | Laranja (Alta) | Roxo (Alta) |
+| BUG-001 | Em Análise | Amarelo (Média) | Azul (Média) |
+| BUG-003 | Em Análise | Amarelo (Média) | Azul (Média) |
 | BUG-004 | Novo | Amarelo (Média) | Azul (Média) |
-| BUG-005 | Novo | Amarelo (Média) | Cinza (Baixa) |
-| BUG-002 | Adiado | Verde (Baixa) | Cinza (Baixa) |
+| BUG-005 | Novo | Amarelo (Média) | Azul (Média) |
 
-O cartão do checkout quebrado (BUG-003) já foi puxado direto pra "Em Correção" por bloquear a compra inteira; o da ordenação (BUG-002) ficou em "Adiado" por ser só estético/baixo impacto.
+O cartão do checkout com carrinho vazio (BUG-002) já foi puxado direto pra "Em Correção" por ser o mais grave (permite concluir pedido de valor $0); os outros 4 ainda estão sendo analisados/aguardando análise.
 
 > Arquivo final: [`atividade-13/Atividade13_Bug_Tracking_Jira.docx`](./atividade-13/Atividade13_Bug_Tracking_Jira.docx)
 
-**Pendente:** criar o board de verdade no Jira (ou Trello) e anexar o print do board com os 5 cartões.
+**Pendente:** atualizar os 5 cartões já criados no board real do Jira com esse conteúdo (bugs corretos do relatório oficial do Armando) e anexar o print atualizado.
