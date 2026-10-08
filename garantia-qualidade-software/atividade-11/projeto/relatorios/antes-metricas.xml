@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/Users/betosilva/Documents/AtividadeQA-AT11/antes/src/ProcessadorPagamento.java">
+<error line="7" column="5" severity="error" message="Cyclomatic Complexity is 9 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="10" column="13" severity="error" message="Nested if-else depth is 1 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="11" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="11" column="58" severity="error" message="&apos;16&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="13" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="15" column="47" severity="error" message="&apos;0.05&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="20" column="47" severity="error" message="&apos;0.02&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="40" column="5" severity="error" message="Cyclomatic Complexity is 2 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="49" column="5" severity="error" message="Cyclomatic Complexity is 5 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="51" column="13" severity="error" message="Nested if-else depth is 1 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="51" column="31" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="52" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="52" column="35" severity="error" message="&apos;50&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="53" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="53" column="39" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="54" column="53" severity="error" message="&apos;0.7&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="56" column="53" severity="error" message="&apos;0.8&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="59" column="49" severity="error" message="&apos;0.9&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+</checkstyle>

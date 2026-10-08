@@ -1,0 +1,4 @@
+APROVADO: 230 verificacoes.
+Inclui 168 pagamentos, 40 descontos por regressao, 10 fronteiras,
+3 taxas, 4 senhas e 5 configuracoes invalidas.
+Credenciais de teste aleatorias, geradas em memoria e nao persistidas.

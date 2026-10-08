@@ -40,10 +40,11 @@ Validação funcional: **230 verificações** comparando comportamento antes/dep
 - Senha de demonstração (`admin123`) continua fixa no exercício, mas a validação já suporta hash/salt fornecidos externamente
 - Exigência de cartão de 16 dígitos mantida até pro PIX, só pra preservar a comparação 1:1 com a suíte de 230 testes
 
-> Arquivo final (conteúdo real, mesmo template das outras atividades): [`Atividade11_Analise_Estatica_Refatoracao.docx`](./atividade-11/Atividade11_Analise_Estatica_Refatoracao.docx) · [PDF](./atividade-11/Atividade11_Analise_Estatica_Refatoracao.pdf)
+> Arquivo final (conteúdo real, código PBKDF2 literal, mesmo template das outras atividades): [`Atividade11_Analise_Estatica_Refatoracao.docx`](./atividade-11/Atividade11_Analise_Estatica_Refatoracao.docx) · [PDF](./atividade-11/Atividade11_Analise_Estatica_Refatoracao.pdf)
 > Relatório original (Checkstyle/SpotBugs/Semgrep executados de verdade): [`Relatorio-AT11_real.pdf`](./atividade-11/Relatorio-AT11_real.pdf)
 > Roteiro de apresentação: [`Roteiro_Apresentacao_AT11.docx`](./atividade-11/Roteiro_Apresentacao_AT11.docx) · [PDF](./atividade-11/Roteiro_Apresentacao_AT11.pdf)
+> **Projeto completo com todas as evidências reais** (código antes/depois, configs do Checkstyle/Semgrep, resultados XML/JSON de cada ferramenta, suíte de 230 testes): [`atividade-11/projeto/`](./atividade-11/projeto/)
 
-**Nota:** o trecho de `validarSenha()`/PBKDF2 no código refatorado deste documento é um placeholder apontando pro código-fonte real do projeto — o `.java` final com a implementação completa do PBKDF2 ainda não foi anexado pra substituir esse trecho pelo código literal.
+Todos os números foram conferidos contra os arquivos reais de saída das ferramentas (`relatorios/*.xml`, `*.json`) — bate 100% com o documento: Checkstyle 5→0 nas linhas 3/5/7/40/49, complexidade ciclomática máxima 9→6, aninhamento 3→0, 9 números mágicos→0, SpotBugs 1→0, Semgrep 2→0, e os 230 testes (168 pagamentos + 40 descontos + 10 fronteiras + 4 senhas + 5 configs inválidas + 3 taxas) todos aprovados.
 
 **Pendente:** os 2 prints do painel Problems (antes/depois) — precisam ser salvos como PNG a partir do VS Code real.

@@ -1,0 +1,23 @@
+# Regras locais didaticas: escopo explicito e identico nas duas versoes.
+rules:
+  - id: at11-senha-fixa
+    languages: [java]
+    severity: ERROR
+    message: Senha de referencia fixa no codigo; receba hash e salt de armazenamento externo.
+    patterns:
+      - pattern: String $NOME = "$VALOR";
+      - metavariable-regex:
+          metavariable: $NOME
+          regex: (?i)^(senha(correta|esperada)?|password|passwd)$
+  - id: at11-comparacao-string-referencia
+    languages: [java]
+    severity: WARNING
+    message: Comparacao de String por referencia; compare conteudo ou hashes da credencial.
+    patterns:
+      - pattern-inside: |
+          public boolean validarSenha(String $SENHA) {
+            ...
+          }
+      - pattern: $SENHA == $OUTRA
+      - pattern-not: $SENHA == null
+      - pattern-not: null == $SENHA

@@ -1,0 +1,14 @@
+{
+  "antes": {
+    "Checkstyle": 5,
+    "Google original": 60,
+    "SpotBugs": 1,
+    "Semgrep": 2
+  },
+  "depois": {
+    "Checkstyle": 0,
+    "Google original": 109,
+    "SpotBugs": 0,
+    "Semgrep": 0
+  }
+}

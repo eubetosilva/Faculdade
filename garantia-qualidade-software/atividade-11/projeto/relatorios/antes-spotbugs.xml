@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.10.4" sequence="0" timestamp="1791413847697" analysisTimestamp="1791413850025" release="">
+  <Project projectName="">
+    <Jar>/Users/betosilva/Documents/AtividadeQA-AT11/antes/bin</Jar>
+  </Project>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE" instanceHash="8506b40e1d53dff93ac7d18a8c19a6fd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="595">
+    <ShortMessage>Comparison of String parameter using == or !=</ShortMessage>
+    <LongMessage>Comparison of String parameter using == or != in src.ProcessadorPagamento.validarSenha(String)</LongMessage>
+    <Class classname="src.ProcessadorPagamento" primary="true">
+      <SourceLine classname="src.ProcessadorPagamento" start="5" end="65" sourcefile="ProcessadorPagamento.java" sourcepath="src/ProcessadorPagamento.java">
+        <Message>At ProcessadorPagamento.java:[lines 5-65]</Message>
+      </SourceLine>
+      <Message>In class src.ProcessadorPagamento</Message>
+    </Class>
+    <Method classname="src.ProcessadorPagamento" name="validarSenha" signature="(Ljava/lang/String;)Z" isStatic="false" primary="true">
+      <SourceLine classname="src.ProcessadorPagamento" start="41" end="46" startBytecode="0" endBytecode="8" sourcefile="ProcessadorPagamento.java" sourcepath="src/ProcessadorPagamento.java"/>
+      <Message>In method src.ProcessadorPagamento.validarSenha(String)</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="142" end="4904" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 142-4904]</Message>
+      </SourceLine>
+      <Message>Actual type String</Message>
+    </Type>
+    <LocalVariable name="senhaCorreta" register="2" pc="4" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from senhaCorreta</Message>
+    </LocalVariable>
+    <LocalVariable name="senha" register="1" pc="4" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from senha</Message>
+    </LocalVariable>
+    <SourceLine classname="src.ProcessadorPagamento" primary="true" start="42" end="42" startBytecode="5" endBytecode="5" sourcefile="ProcessadorPagamento.java" sourcepath="src/ProcessadorPagamento.java">
+      <Message>At ProcessadorPagamento.java:[line 42]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" abbrev="ES" category="BAD_PRACTICE" cweid="595">
+    <ShortDescription>Comparison of String parameter using == or !=</ShortDescription>
+    <Details><![CDATA[
+
+  <p>This code compares a <code>java.lang.String</code> parameter for reference
+equality using the == or != operators. Requiring callers to
+pass only String constants or interned strings to a method is unnecessarily
+fragile, and rarely leads to measurable performance gains. Consider
+using the <code>equals(Object)</code> method instead.</p>
+<p>See <a href="https://cwe.mitre.org/data/definitions/595.html">CWE-595: Comparison of Object References Instead of Object Contents</a>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ES" cweid="597">
+    <Description>Checking String equality using == or !=</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 7 Oct 2026 19:57:27 -0300" total_classes="1" referenced_classes="22" total_bugs="1" total_size="39" num_packages="1" java_version="21.0.12.1" vm_version="21.0.12.1" cpu_seconds="1.93" clock_seconds="0.75" peak_mbytes="231.95" alloc_mbytes="768.00" gc_seconds="0.01" priority_1="1">
+    <FileStats path="src/ProcessadorPagamento.java" bugCount="1" size="39" bugHash="3f1e827c2ee27e325135dac82b93d39f"/>
+    <PackageStats package="src" total_bugs="1" total_types="1" total_size="39" priority_1="1">
+      <ClassStats class="src.ProcessadorPagamento" sourceFile="ProcessadorPagamento.java" interface="false" size="39" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="185" invocations="515" avgMicrosecondsPerInvocation="360" maxMicrosecondsPerInvocation="6593" standardDeviationMicrosecondsPerInvocation="744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="49" invocations="22" avgMicrosecondsPerInvocation="2255" maxMicrosecondsPerInvocation="8472" standardDeviationMicrosecondsPerInvocation="2548"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="31" invocations="22" avgMicrosecondsPerInvocation="1449" maxMicrosecondsPerInvocation="5949" standardDeviationMicrosecondsPerInvocation="1621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="30" invocations="110" avgMicrosecondsPerInvocation="276" maxMicrosecondsPerInvocation="2154" standardDeviationMicrosecondsPerInvocation="358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="27" invocations="517" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="2198" standardDeviationMicrosecondsPerInvocation="125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="24" invocations="50" avgMicrosecondsPerInvocation="482" maxMicrosecondsPerInvocation="7118" standardDeviationMicrosecondsPerInvocation="1068"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="20" invocations="473" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="1158" standardDeviationMicrosecondsPerInvocation="98"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="17" invocations="1" avgMicrosecondsPerInvocation="17340" maxMicrosecondsPerInvocation="17340" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="15" invocations="22" avgMicrosecondsPerInvocation="697" maxMicrosecondsPerInvocation="3558" standardDeviationMicrosecondsPerInvocation="805"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="14" invocations="22" avgMicrosecondsPerInvocation="669" maxMicrosecondsPerInvocation="3809" standardDeviationMicrosecondsPerInvocation="951"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="13" invocations="22" avgMicrosecondsPerInvocation="615" maxMicrosecondsPerInvocation="6946" standardDeviationMicrosecondsPerInvocation="1415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="11" invocations="22" avgMicrosecondsPerInvocation="534" maxMicrosecondsPerInvocation="5294" standardDeviationMicrosecondsPerInvocation="1094"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="11" invocations="22" avgMicrosecondsPerInvocation="517" maxMicrosecondsPerInvocation="1873" standardDeviationMicrosecondsPerInvocation="576"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

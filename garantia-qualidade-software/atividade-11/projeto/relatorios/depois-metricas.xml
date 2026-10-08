@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/Users/betosilva/Documents/AtividadeQA-AT11/depois/src/ProcessadorPagamento.java">
+<error line="32" column="5" severity="error" message="Cyclomatic Complexity is 1 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="45" column="5" severity="error" message="Cyclomatic Complexity is 6 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="74" column="5" severity="error" message="Cyclomatic Complexity is 6 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="90" column="5" severity="error" message="Cyclomatic Complexity is 4 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="107" column="5" severity="error" message="Cyclomatic Complexity is 1 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="120" column="5" severity="error" message="Cyclomatic Complexity is 3 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="150" column="5" severity="error" message="Cyclomatic Complexity is 5 (max allowed is 0)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+</file>
+</checkstyle>
